@@ -1,11 +1,14 @@
+<?php ?>
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mishacafé</title>
-  <link rel="stylesheet" href="/css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mishacafe</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Si usas FontAwesome CDN, agrégalo aquí -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -54,8 +57,7 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
-        <p
-          id="mensaje-busqueda"
+        <p id="mensaje-busqueda"
           style="
               display: none;
               color: red;
