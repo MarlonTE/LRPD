@@ -1,4 +1,3 @@
-<?php ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +11,7 @@
 </head>
 
 <body>
+  <!-- ENCABEZADO -->
   <header>
     <div class="container-hero">
       <div class="container container-hero2">
@@ -28,7 +28,7 @@
         </div>
 
         <div class="container-user">
-          <a href="login.html" class="btn-login-link">
+          <a href="/views/login.php" class="btn-login-link">
             <i class="fa-solid fa-user"></i>
           </a>
           <i class="fa-solid fa-cart-shopping"></i>
@@ -44,7 +44,7 @@
       <nav class="container nav_container">
         <i class="fa-solid fa-bars"></i>
         <ul class="lista">
-          <li><a href="/">Inicio</a></li>
+          <li><a href="#">Inicio</a></li>
           <li><a href="#categorias">Mejores Categorías</a></li>
           <li><a href="#productos">Mejores Productos</a></li>
           <li><a href="#galerias">Galeria</a></li>
@@ -57,7 +57,8 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
-        <p id="mensaje-busqueda"
+        <p
+          id="mensaje-busqueda"
           style="
               display: none;
               color: red;
