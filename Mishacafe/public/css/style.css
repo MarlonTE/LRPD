@@ -220,7 +220,7 @@ html {
 
 .banner {
   background-image: linear-gradient(100deg, #000000, #00000020),
-    url("/img/banner.jpg");
+    url("/Mishacafe/public/img/banner.jpg");
   height: 60rem;
   background-size: cover;
   background-position: center;
@@ -332,7 +332,8 @@ html {
 }
 
 .category-moca {
-  background-image: linear-gradient(#00000080, #00000080), url("/img/moca.jpg");
+  background-image: linear-gradient(#00000080, #00000080),
+    url("/Mishacafe/public/img/moca.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -341,7 +342,7 @@ html {
 
 .category-capuchino {
   background-image: linear-gradient(#00000080, #00000080),
-    url("/img/capu-min.jpg");
+    url("/Mishacafe/public/img/capu-min.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -349,7 +350,7 @@ html {
 
 .category-expreso {
   background-image: linear-gradient(#00000080, #00000080),
-    url("/img/expresl.jpg");
+    url("/Mishacafe/public/img/expresl.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1459,4 +1460,14 @@ html {
     width: 100%;
     margin-top: 1rem;
   }
+}
+.user-session-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 0.9rem;
+}
+.user-email {
+  font-weight: 600;
 }

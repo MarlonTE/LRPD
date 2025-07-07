@@ -5,14 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iniciar Sesión - Mishacafé</title>
-  <link rel="stylesheet" href="../public/css/style.css" />
+  <link rel="stylesheet" href="/Mishacafe/public/css/style.css">
 </head>
 
 <body class="login-body">
   <section class="login-section">
     <div class="login-container">
       <h2>Iniciar Sesión</h2>
-      <form action="../login.php" method="POST">
+      <form action="/Mishacafe/public/index.php?controller=auth&action=login" method="post">
         <div class="form-group">
           <label for="email">Correo electrónico</label>
           <input
@@ -35,7 +35,7 @@
 
         <button type="submit" class="btn-login">Ingresar</button>
         <p class="login-help">
-          ¿No tienes cuenta? <a href="#">Regístrate</a>
+          ¿No tienes cuenta? <a href="/Mishacafe/public/registro.php">Regístrate</a>
         </p>
       </form>
     </div>

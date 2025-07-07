@@ -37,3 +37,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// Abrir modal al hacer clic en el ícono de ojo
+document.addEventListener("click", function (e) {
+  // Si se hace clic en el ícono de ojo o en su contenedor
+  if (e.target.classList.contains("fa-eye") || e.target.closest(".fa-eye")) {
+    const card = e.target.closest(".card-product");
+    if (card) {
+      const img = card.querySelector("img");
+      const modal = document.getElementById("modal-img");
+      const modalImg = document.getElementById("img-ampliada");
+      modalImg.src = img.src;
+      modal.style.display = "block";
+    }
+  }
+
+  // Cerrar modal al hacer clic en la X
+  if (e.target.classList.contains("close-modal")) {
+    document.getElementById("modal-img").style.display = "none";
+  }
+
+  // Cerrar modal al hacer clic fuera de la imagen
+  if (e.target.id === "modal-img") {
+    document.getElementById("modal-img").style.display = "none";
+  }
+});
